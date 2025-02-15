@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+        <form action="welcomepage.html" name="reg" onsubmit="return validate( )">
+            <h1>Registration Form</h1>
+            <div>
+                <label>Name</label>
+                <input type="text" id="name" placeholder="Enter your username">
+                <span id="name-error" class="error-message"></span> 
+            </div>
+            
+            <div>
+                <label>Email</label>
+                <input type="text"  id="email" placeholder="Enter your email">
+                <span id="email-error" class="error-message"></span>
+            </div>
+
+            <div>
+                <label>Password</label>
+                <input type="text" id="pwd" placeholder="Enter your password">
+                <span id="password-error" class="error-message"></span>
+                
+            </div>
+
+            <div>
+                <label>Address</label>
+                <textarea id="address" placeholder="Enter your address"></textarea>
+                <span id="address-error" class="error-message"></span>
+            </div>
+
+            <div>
+                <label>Contact Number</label>
+                <input type="text"  id="phoneno" placeholder="Enter your phonenumber">
+                <span id="phoneno-error" class="error-message"></span>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
